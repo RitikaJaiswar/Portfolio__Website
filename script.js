@@ -105,3 +105,42 @@ document.getElementById('contactForm').addEventListener('submit', function (even
 
     window.location.href = mailtoLink;
 });
+
+const service = document.querySelector('.service');
+
+function dull(){
+    pageNumber= totalPages-3;
+}
+
+service.onclick = () => {
+    pages.forEach((page, index) => {
+        setTimeout(() => {
+            dull();
+            pages[pageNumber].classList.add('turn');
+           setTimeout(() => {
+            dull();
+            pages[pageNumber].style.zIndex = 20 + index;
+           },500)
+        }, (index + 1)*200 + 100 )
+    })
+}
+
+const skills = document.querySelector('.sk');
+
+
+
+skills.onclick = () => {
+    pages.forEach((page, index) => {
+        setTimeout(() => {
+            dull();
+            pages[pageNumber].classList.add('turn');
+           setTimeout(() => {
+            dull();
+            pages[pageNumber].style.zIndex = 20 + index;
+           },500)
+        }, (index + 1)*200 + 100 )
+    })
+}
+
+
+
