@@ -37,10 +37,10 @@ body {
 
 .wrapper {
     position: relative;
-    width: 65rem;
-    height: 45rem;
-    padding: 2rem;
-    perspective:250rem ;
+    width: 1040px;
+    height: 720px;
+    padding: 32px;
+    perspective: 4000px ;
     animation: show-animate 2s forwards;
     
 }
